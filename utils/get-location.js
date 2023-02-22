@@ -6,7 +6,7 @@ const { default: axios } = require("axios");
 async function fetchLocation(lat, long) {
   try {
     const r = await axios.get(
-      `http://localhost:3000/api/location?lat=${lat}&long=${long}`
+      `https://amazon-ten-mauve.vercel.app//api/location?lat=${lat}&long=${long}`
     );
     return r.data;
   } catch (e) {
